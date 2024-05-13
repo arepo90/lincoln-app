@@ -1,0 +1,81 @@
+{
+  ".svelte-kit/generated/client-optimized/app.js": {
+    "file": "_app/immutable/entry/app.C_wOcfqa.js",
+    "name": "entry/app",
+    "src": ".svelte-kit/generated/client-optimized/app.js",
+    "isEntry": true,
+    "imports": [
+      "_scheduler.D4TwVaDg.js",
+      "_index.2CvYi1og.js"
+    ],
+    "dynamicImports": [
+      ".svelte-kit/generated/client-optimized/nodes/0.js",
+      ".svelte-kit/generated/client-optimized/nodes/1.js",
+      ".svelte-kit/generated/client-optimized/nodes/2.js"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/0.js": {
+    "file": "_app/immutable/nodes/0.C0H0jcyR.js",
+    "name": "nodes/0",
+    "src": ".svelte-kit/generated/client-optimized/nodes/0.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_scheduler.D4TwVaDg.js",
+      "_index.2CvYi1og.js"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/1.js": {
+    "file": "_app/immutable/nodes/1.BR6jLaIn.js",
+    "name": "nodes/1",
+    "src": ".svelte-kit/generated/client-optimized/nodes/1.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_scheduler.D4TwVaDg.js",
+      "_index.2CvYi1og.js",
+      "_entry.PtsySzz_.js"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/2.js": {
+    "file": "_app/immutable/nodes/2.CO8So4wi.js",
+    "name": "nodes/2",
+    "src": ".svelte-kit/generated/client-optimized/nodes/2.js",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_scheduler.D4TwVaDg.js",
+      "_index.2CvYi1og.js"
+    ],
+    "css": [
+      "_app/immutable/assets/2.Cl4ufwy5.css"
+    ]
+  },
+  "_entry.PtsySzz_.js": {
+    "file": "_app/immutable/chunks/entry.PtsySzz_.js",
+    "name": "entry",
+    "imports": [
+      "_scheduler.D4TwVaDg.js"
+    ]
+  },
+  "_index.2CvYi1og.js": {
+    "file": "_app/immutable/chunks/index.2CvYi1og.js",
+    "name": "index",
+    "imports": [
+      "_scheduler.D4TwVaDg.js"
+    ]
+  },
+  "_scheduler.D4TwVaDg.js": {
+    "file": "_app/immutable/chunks/scheduler.D4TwVaDg.js",
+    "name": "scheduler"
+  },
+  "node_modules/@sveltejs/kit/src/runtime/client/entry.js": {
+    "file": "_app/immutable/entry/start.D3vSINFC.js",
+    "name": "entry/start",
+    "src": "node_modules/@sveltejs/kit/src/runtime/client/entry.js",
+    "isEntry": true,
+    "imports": [
+      "_entry.PtsySzz_.js"
+    ]
+  }
+}
