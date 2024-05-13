@@ -114,35 +114,36 @@
 </script>
 
 <!-- html -->
-<div class="header">
+<div class="bg">
 <div class="overlay">
 
 {#if loggedIn}
     <p>logged in as {userName} ({userEmail})</p>
     <button on:click={logout}>Logout</button>
-    
-<hr>
+    <hr>
+    <div class="center">
+        <input type="text" placeholder="Add Task" bind:value={task}>
+        <button on:click={addTodo}>Add</button>
 
-<input type="text" placeholder="Add Task" bind:value={task}>
-<button on:click={addTodo}>Add</button>
-
-<ol>
-    {#each todos as item}
-        <li>
-            <a href="#" on:click={() => markDone(item)} class:done={item.isDone}>{item.task}</a>
-            <span>
-                <button on:click={() => markDone(item)}>✓</button>
-                <button on:click={() => deleteTodo(item)}>X</button>
-                <button on:click={() => moveUp(item)}>^</button>
-                <button on:click={() => moveDown(item)}>v</button>
-            </span>
-        </li>
-    {:else}
-        <p>No tasks found</p>
-    {/each}
-</ol>
+        <ol>
+            {#each todos as item}
+                <li class="list">
+                    <a href="#" on:click={() => markDone(item)} class:done={item.isDone}>{item.task}</a>
+                    <span class="right">
+                        <button on:click={() => markDone(item)}>✓</button>
+                        <button on:click={() => deleteTodo(item)}>X</button>
+                        <button on:click={() => moveUp(item)}>^</button>
+                        <button on:click={() => moveDown(item)}>v</button>
+                    </span>
+                </li>
+            {:else}
+                <p>No tasks found</p>
+            {/each}
+        </ol>
+    </div>
 {:else}
     <p>Not logged in</p>
+    <hr>
     <button on:click={login}>Login with Google</button>
 {/if}
 
@@ -153,11 +154,11 @@
 
 <!-- css -->
 <style>
-    .header {
+    .bg {
         padding: 15px;
         margin: -15px;
-        background: linear-gradient(45deg, red, blue);
-        animation: background 12s ease-in-out infinite;
+        background: linear-gradient(45deg, red, blue, orange, green);
+        animation: background 5s ease-in-out infinite;
         background-size: 300% 300%;
         height: 100%;
         width: 100%;
@@ -165,14 +166,10 @@
     }
 
     .overlay {
-        /*background: linear-gradient(red, blue);*/
-        /*background: linear-gradient(45deg, rgb(210, 0, 26), rgb(116, 98, 255), rgb(244, 142, 33), rgb(25, 213, 171));
-        animation: background 12s ease-in-out infinite;
-        background-size: 300% 300%;*/
         padding: 15px;
         margin: -15px;
-        background-image: radial-gradient(transparent 3px, black 3px);
-        background-size: 40px 40px;
+        background-image: radial-gradient(transparent 2px, black 2px);
+        background-size: 30px 30px;
         height: 100%;
         width: 100%;
         position: fixed;
@@ -196,8 +193,26 @@
         color: gray;
     }
 
+    .list {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    .center {
+        width: fit-content;
+        margin: 0 auto;
+        padding: 15px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 5px;
+    }
+
+    .right {
+        position: relative;
+        float: right;
+    }
+
     a {
-        color: black;
+        color: white;
         text-decoration: none;
     }
     a:hover {
