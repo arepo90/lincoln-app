@@ -60,9 +60,6 @@
     "isEntry": true,
     "imports": [
       "_ssr.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_page.CvYAsL1T.css"
     ]
   }
 }

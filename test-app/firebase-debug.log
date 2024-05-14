@@ -1,0 +1,25 @@
+[debug] [2024-05-14T04:31:41.931Z] ----------------------------------------------------------------------
+[debug] [2024-05-14T04:31:41.934Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\nabet\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2024-05-14T04:31:41.934Z] CLI Version:   12.0.1
+[debug] [2024-05-14T04:31:41.935Z] Platform:      win32
+[debug] [2024-05-14T04:31:41.935Z] Node Version:  v18.20.2
+[debug] [2024-05-14T04:31:41.941Z] Time:          Mon May 13 2024 22:31:41 GMT-0600 (Central Standard Time)
+[debug] [2024-05-14T04:31:41.941Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-14T04:31:42.168Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-14T04:31:42.170Z] > authorizing via signed-in user (nabetse069@gmail.com)
+[debug] [2024-05-14T04:31:42.170Z] [iam] checking project todo-lincoln for permissions ["firebase.projects.get"]
+[debug] [2024-05-14T04:31:42.175Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/todo-lincoln:testIamPermissions [none]
+[debug] [2024-05-14T04:31:42.176Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/todo-lincoln:testIamPermissions x-goog-quota-user=projects/todo-lincoln
+[debug] [2024-05-14T04:31:42.176Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/todo-lincoln:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-05-14T04:31:42.514Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/todo-lincoln:testIamPermissions 200
+[debug] [2024-05-14T04:31:42.515Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/todo-lincoln:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-05-14T04:31:42.517Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/todo-lincoln [none]
+[debug] [2024-05-14T04:31:42.773Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/todo-lincoln 200
+[debug] [2024-05-14T04:31:42.773Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/todo-lincoln {"projectId":"todo-lincoln","projectNumber":"129836527279","displayName":"todo-lincoln","name":"projects/todo-lincoln","resources":{"hostingSite":"todo-lincoln"},"state":"ACTIVE","etag":"1_01f59e82-88c3-4745-b70e-256332b3ee48"}
+[info] 
+[info] === Serving from 'C:\Users\nabet\Desktop\lincoln-app\test-app'...
+[info] 
+[debug] [2024-05-14T04:31:42.781Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/todo-lincoln [none]
+[debug] [2024-05-14T04:31:42.970Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/todo-lincoln 200
+[debug] [2024-05-14T04:31:42.970Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/todo-lincoln {"projectId":"todo-lincoln","projectNumber":"129836527279","displayName":"todo-lincoln","name":"projects/todo-lincoln","resources":{"hostingSite":"todo-lincoln"},"state":"ACTIVE","etag":"1_01f59e82-88c3-4745-b70e-256332b3ee48"}
